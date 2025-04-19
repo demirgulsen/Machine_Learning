@@ -1,0 +1,591 @@
+MSSubClass : Identifies the type of dwelling involved in the sale.
+           : Konut tipi
+
+        20	1-STORY 1946 & NEWER ALL STYLES     (1 KATLI 1946 VE DAHA YENI TÜM STILLER)
+        30	1-STORY 1945 & OLDER                (1 KATLI 1945 VE DAHA ESKI)
+        40	1-STORY W/FINISHED ATTIC ALL AGES   (1 KATLI, BITMIŞ TAVAN ARASI HER YAŞTAN)
+        45	1-1/2 STORY - UNFINISHED ALL AGES   (1-1/2 KATLI - BITMEMIŞ HER YAŞTAN)
+        50	1-1/2 STORY FINISHED ALL AGES       (1-1/2 KATLI HER YAŞ IÇIN TAMAMLANDI)
+        60	2-STORY 1946 & NEWER                (2 KATLI 1946 VE DAHA YENI)
+        70	2-STORY 1945 & OLDER                (2 KATLI 1945 VE DAHA ESKI)
+        75	2-1/2 STORY ALL AGES                (2-1/2 HIKAYE HER YAŞ IÇIN)
+        80	SPLIT OR MULTI-LEVEL                (BÖLÜNMÜŞ VEYA ÇOK SEVIYELI)
+        85	SPLIT FOYER                         (BÖLMELİ FOYER)
+        90	DUPLEX - ALL STYLES AND AGES        (DUBLEKS - HER TARZ VE YAŞTA)
+       120	1-STORY PUD (Planned Unit Development) - 1946 & NEWER    (1 KATLI PUD (Planlı Birim Geliştirme) - 1946 & DAHA YENİ)
+       150	1-1/2 STORY PUD - ALL AGES          (1-1/2 KATLI PUD - HER YAŞTAN)
+       160	2-STORY PUD - 1946 & NEWER          (2 KATLI PUD - 1946 VE DAHA YENI)
+       180	PUD - MULTILEVEL - INCL SPLIT LEV/FOYER     (PUD - ÇOK KATLI - BÖLÜNMÜŞ KAT/FUAYE DAHIL)
+       190	2 FAMILY CONVERSION - ALL STYLES AND AGES   (2 AILE DÖNÜŞÜMÜ - HER TARZ VE YAŞTA)
+
+MSZoning : Identifies the general zoning classification of the sale.
+		 : Satışın genel imar sınıflandırması
+
+       A	Agriculture      (Tarım)
+       C	Commercial       (Ticari)
+       FV	Floating Village Residential   (Yüzen Köy Konutları)
+       I	Industrial       (Endüstriyel)
+       RH	Residential High Density       (Yüksek Yoğunluklu Konut)
+       RL	Residential Low Density        (Düşük Yoğunluklu Konut)
+       RP	Residential Low Density Park   (Düşük Yoğunluklu Park)
+       RM	Residential Medium Density     (Orta Yoğunlukta Konut)
+	
+LotFrontage   : Linear feet of street connected to property
+(Arsa cephesi : Mülke bağlanan caddenin doğrusal fitleri)
+
+LotArea: Lot size in square feet
+(LotAlanı: Metrekare cinsinden arsa büyüklüğü)
+
+Street: Type of road access to property
+(Sokak: Mülke erişim sağlayan yol tipi)
+
+       Grvl	Gravel	 (Çakıl)
+       Pave	Paved    (Asfalt Döşeme)
+       	
+Alley: Type of alley access to property
+(Sokak: Mülke sokak erişiminin türü)
+
+       Grvl	Gravel  (Çakıl)
+       Pave	Paved   (Asfalt Döşeme)
+       NA 	No alley access  (Sokak erişimi yok)
+		
+LotShape: General shape of property
+(Arsa Şekli: Mülkün genel şekli)
+
+       Reg	Regular	 (Düzenli)
+       IR1	Slightly irregular  (Hafif düzensiz)
+       IR2	Moderately Irregular  (Orta Düzeyde Düzensiz)
+       IR3	Irregular  (Düzensiz)
+       
+LandContour: Flatness of the property
+           : (Mülkün düzlüğü)
+
+       Lvl	Near Flat/Level	   (Düz/Düzeye Yakın Seviye)
+       Bnk	Banked - Quick and significant rise from street grade to building   (Cadde kotundan binaya kadar hızlı ve belirgin yükselme)
+       HLS	Hillside - Significant slope from side to side   (Bir yandan diğer yana belirgin eğim)
+       Low	Depression  (Düşük Depresyon)
+		
+Utilities: Type of utilities available
+(Kamu Hizmetleri: Mevcut kamu hizmetlerinin türü)
+
+       AllPub	All public Utilities (E,G,W,& S)   (Tüm kamu hizmetleri (E,G,W,& S)
+       NoSewr	Electricity, Gas, and Water (Septic Tank)  (Elektrik, Gaz ve Su (Septik Tank))
+       NoSeWa	Electricity and Gas Only  (Yalnızca Elektrik ve Gaz)
+       ELO	Electricity only	(Yalnızca Elektrik)
+	
+LotConfig: Lot configuration
+         : (Lot yapılandırması)
+
+       Inside	Inside lot  (Arsa içinde)
+       Corner	Corner lot  (Köşe arsa)
+       CulDSac	Cul-de-sac  (Çıkmaz sokak)
+       FR2	Frontage on 2 sides of property  (Mülkün 2 tarafında cephe)
+       FR3	Frontage on 3 sides of property  (Mülkün 3 tarafında cephe)
+	
+LandSlope: Slope of property
+(Arazi Eğimi: Mülkün eğimi)
+
+       Gtl	Gentle slope    (Yumuşak eğim)
+       Mod	Moderate Slope	(Orta Eğim)
+       Sev	Severe Slope    (Şiddetli Eğim)
+	
+Neighborhood: Physical locations within Ames city limits
+(Mahalle: Ames şehir sınırları içindeki fiziksel konumlar)
+
+       Blmngtn	Bloomington Heights
+       Blueste	Bluestem
+       BrDale	Briardale
+       BrkSide	Brookside
+       ClearCr	Clear Creek
+       CollgCr	College Creek
+       Crawfor	Crawford
+       Edwards	Edwards
+       Gilbert	Gilbert
+       IDOTRR	Iowa DOT and Rail Road
+       MeadowV	Meadow Village
+       Mitchel	Mitchell
+       Names	North Ames
+       NoRidge	Northridge
+       NPkVill	Northpark Villa
+       NridgHt	Northridge Heights
+       NWAmes	Northwest Ames
+       OldTown	Old Town
+       SWISU	South & West of Iowa State University
+       Sawyer	Sawyer
+       SawyerW	Sawyer West
+       Somerst	Somerset
+       StoneBr	Stone Brook
+       Timber	Timberland
+       Veenker	Veenker
+			
+Condition1: Proximity to various conditions
+(Koşul1: Çeşitli koşullara yakınlık)
+
+       Artery	Adjacent to arterial street (Arteriyel caddeye bitişik)
+       Feedr	Adjacent to feeder street	(Besleyici caddeye bitişik	)
+       Norm	Normal	
+       RRNn	Within 200' of North-South Railroad  (Kuzey-Güney Demiryolunun 200' İçinde)
+       RRAn	Adjacent to North-South Railroad     (Kuzey-Güney Demiryoluna Bitişik)
+       PosN	Near positive off-site feature--park, greenbelt, etc.  (Olumlu saha dışı özelliklerin yakınında - park, yeşil alan vb.)
+       PosA	Adjacent to postive off-site feature  (Pozitif saha dışı özelliğe bitişik)
+       RRNe	Within 200' of East-West Railroad   (Doğu-Batı Demiryolunun 200' İçinde)
+       RRAe	Adjacent to East-West Railroad   (Doğu-Batı Demiryoluna Komşu)
+	
+Condition2: Proximity to various conditions (if more than one is present)
+(Koşul2: Çeşitli koşullara yakınlık (birden fazla koşul mevcutsa))
+		
+       Artery	Adjacent to arterial street
+       Feedr	Adjacent to feeder street
+       Norm	Normal	
+       RRNn	Within 200' of North-South Railroad
+       RRAn	Adjacent to North-South Railroad
+       PosN	Near positive off-site feature--park, greenbelt, etc.
+       PosA	Adjacent to postive off-site feature
+       RRNe	Within 200' of East-West Railroad
+       RRAe	Adjacent to East-West Railroad
+	
+BldgType: Type of dwelling
+(Konut tipi)
+		
+       1Fam	Single-family Detached	 (Müstakil Tek Aile	)
+       2FmCon	Two-family Conversion; originally built as one-family dwelling  (İki aileli dönüşüm; aslen tek aileli konut olarak inşa edilmiştir)
+       Duplx	Duplex
+       TwnhsE	Townhouse End Unit  (Şehir Evi Son Birim)
+       TwnhsI	Townhouse Inside Unit  ( Şehir Evi İç Ünite )
+	
+HouseStyle: Style of dwelling
+(Konut tarzı)
+	
+       1Story	One story  (1 Katlı)
+       1.5Fin	One and one-half story: 2nd level finished  (Bir buçuk kat: 2. kat bitmiş)
+       1.5Unf	One and one-half story: 2nd level unfinished  (Bir buçuk katlı: 2. kat bitmemiş)
+       2Story	Two story  (İki katlı )
+       2.5Fin	Two and one-half story: 2nd level finished  (İki buçuk kat: 2. kat bitmiş)
+       2.5Unf	Two and one-half story: 2nd level unfinished  (İki buçuk katlı: 2. kat bitmemiş)
+       SFoyer	Split Foyer  (Bölünmüş Fuaye)
+       SLvl	Split Level  ( Ayrık Seviye )
+	
+OverallQual: Rates the overall material and finish of the house
+(Genel Kalite: Evin genel malzemesini ve bitişini değerlendirir)
+
+       10	Very Excellent  (Çok Mükemmel )
+       9	Excellent  (Mükemmel )
+       8	Very Good  ()
+       7	Good  ()
+       6	Above Average  (Ortalamanın Üstünde)
+       5	Average  (Ortalama )
+       4	Below Average  (Ortalamanın Altında )
+       3	Fair  (Makul)
+       2	Poor  (Zayıf )
+       1	Very Poor  (Çok Zayıf)
+	
+OverallCond: Rates the overall condition of the house
+            (Evin genel durumunu derecelendirir)
+
+       10	Very Excellent ()
+       9	Excellent ()
+       8	Very Good ()
+       7	Good ()
+       6	Above Average	 ()
+       5	Average ()
+       4	Below Average	 ()
+       3	Fair  ()
+       2	Poor  ()
+       1	Very Poor  ()
+		
+YearBuilt: Original construction date
+(İnşa Yılı: Orijinal yapım tarihi)
+
+7 : Remodel date (same as construction date if no remodeling or additions)
+(Tadilat tarihi (tadilat veya ekleme yoksa inşaat tarihi ile aynı))
+
+RoofStyle: Type of roof
+           (Çatı tipi)
+
+       Flat 	Flat (Düz)
+       Gable	Gable()
+       Gambrel	Gabrel (Barn)(Ahır)
+       Hip	Hip()
+       Mansard	Mansard()
+       Shed	Shed( Kulübe)
+		
+RoofMatl: Roof material
+(Çatı malzemesi)
+
+       ClyTile	Clay or Tile(Kil veya Kiremit)
+       CompShg	Standard (Composite) Shingle(Standart (Kompozit) Kiremit)
+       Membran	Membrane()
+       Metal	Metal()
+       Roll	Roll(Rulo)
+       Tar&Grv	Gravel & Tar(Çakıl ve Katran)
+       WdShake	Wood Shakes(Ahşap Kiremit)
+       WdShngl	Wood Shingles(Ahşap Kiremit)
+		
+Exterior1st: Exterior covering on house
+(Evin dış kaplaması)
+
+       AsbShng	Asbestos Shingles(Asbest Kiremitler)
+       AsphShn	Asphalt Shingles(Asfalt Kiremitler)
+       BrkComm	Brick Common(uğla Ortak)
+       BrkFace	Brick Face(Tuğla Yüz)
+       CBlock	Cinder Block()
+       CemntBd	Cement Board(Çimento Levha)
+       HdBoard	Hard Board(Sert Levha)
+       ImStucc	Imitation Stucco(Taklit Sıva)
+       MetalSd	Metal Siding(Metal Kaplama)
+       Other	Other()
+       Plywood	Plywood(Kontrplak)
+       PreCast	PreCast	()
+       Stone	Stone(Taş)
+       Stucco	Stucco(Sıva)
+       VinylSd	Vinyl Siding(Vinil Kaplama)
+       Wd Sdng	Wood Siding(Ahşap Kaplama)
+       WdShing	Wood Shingles(Ahşap Kiremitler)
+	
+Exterior2nd: Exterior covering on house (if more than one material)
+(Exterior2nd: Exterior covering on house (if more than one material))
+
+       AsbShng	Asbestos Shingles()
+       AsphShn	Asphalt Shingles()
+       BrkComm	Brick Common()
+       BrkFace	Brick Face()
+       CBlock	Cinder Block()
+       CemntBd	Cement Board ()
+       HdBoard	Hard Board()
+       ImStucc	Imitation Stucco()
+       MetalSd	Metal Siding()
+       Other	Other()
+       Plywood	Plywood()
+       PreCast	PreCast()
+       Stone	Stone()
+       Stucco	Stucco()
+       VinylSd	Vinyl Siding()
+       Wd Sdng	Wood Siding()
+       WdShing	Wood Shingles()
+	
+MasVnrType: Masonry veneer type
+(Duvar kaplama türü)
+
+       BrkCmn	Brick Common(Tuğla Ortak)
+       BrkFace	Brick Face(Tuğla Yüz)
+       CBlock	Cinder Block()
+       None	None
+       Stone	Stone  (Taş)
+	
+MasVnrArea: Masonry veneer area in square feet
+(Duvar kaplama alanı (metrekare))
+
+ExterQual: Evaluates the quality of the material on the exterior 
+(Dış yüzeydeki malzemenin kalitesini değerlendirir)
+
+       Ex	Excellent ()
+       Gd	Good()
+       TA	Average/Typical()
+       Fa	Fair()
+       Po	Poor()
+		
+ExterCond: Evaluates the present condition of the material on the exterior
+(Malzemenin dış taraftaki mevcut durumunu değerlendirir)
+
+       Ex	Excellent ()
+       Gd	Good()
+       TA	Average/Typical()
+       Fa	Fair()
+       Po	Poor()
+		
+Foundation: Type of foundation
+(Temel türü)
+
+       BrkTil	Brick & Tile(Tuğla ve Kiremit)
+       CBlock	Cinder Block()
+       PConc	Poured Contrete	(Dökme Beton)
+       Slab	Slab(Döşeme)
+       Stone	Stone(Taş)
+       Wood	Wood(Ahşap)
+		
+BsmtQual: Evaluates the height of the basement
+(Bodrumun yüksekliğini değerlendirir)
+
+       Ex	Excellent (100+ inches)()
+       Gd	Good (90-99 inches)()
+       TA	Typical (80-89 inches)()
+       Fa	Fair (70-79 inches)()
+       Po	Poor (<70 inches()
+       NA	No Basement()
+		
+BsmtCond: Evaluates the general condition of the basement
+(Bodrumun genel durumunu değerlendirir)
+       Ex	Excellent()
+       Gd	Good()
+       TA	Typical - slight dampness allowed()
+       Fa	Fair - dampness or some cracking or settling()
+       Po	Poor - Severe cracking, settling, or wetness()
+       NA	No Basement()
+	
+BsmtExposure: Refers to walkout or garden level walls
+(Çıkış veya bahçe seviyesindeki duvarları ifade eder)
+
+       Gd	Good Exposure(İyi Pozlama)
+       Av	Average Exposure (split levels or foyers typically score average or above)	(Ortalama Maruziyet (bölünmüş seviyeler veya fuayeler genellikle ortalama veya üzeri puan alır))
+       Mn	Mimimum Exposure(Minimum Maruziyet)
+       No	No Exposure(Maruziyet yok)
+       NA	No Basement(Bodrum yok)
+	
+BsmtFinType1: Rating of basement finished area
+(Bodrum katı bitmiş alanının derecesi)
+       GLQ	Good Living Quarters(İyi Yaşam Alanları)
+       ALQ	Average Living Quarters(Ortalama Yaşam Alanları)
+       BLQ	Below Average Living Quarters	(Ortalamanın Altında Yaşam Alanları)
+       Rec	Average Rec Room(Ortalama Eğlence Odası)
+       LwQ	Low Quality(Düşük Kalite)
+       Unf	Unfinshed(Bitmemiş)
+       NA	No Basement(Bitmemiş)
+		
+BsmtFinSF1: Type 1 finished square feet
+(Tip 1 bitmiş metrekare)
+
+BsmtFinType2: Rating of basement finished area (if multiple types)
+(Bodrum katı bitmiş alanının derecesi (eğer birden fazla tip varsa))
+       GLQ	Good Living Quarters()
+       ALQ	Average Living Quarters()
+       BLQ	Below Average Living Quarters	()
+       Rec	Average Rec Room()
+       LwQ	Low Quality()
+       Unf	Unfinshed()
+       NA	No Basement()
+
+BsmtFinSF2: Type 2 finished square feet
+(Tip 2 bitmiş kare ayak)
+
+BsmtUnfSF: Unfinished square feet of basement area
+(Bodrum alanının tamamlanmamış kare ayak)
+
+TotalBsmtSF: Total square feet of basement area
+(Bodrum alanının toplam kare ayak)
+
+Heating: Type of heating
+(Isıtma türü)
+
+       Floor	Floor Furnace(Zemin Fırını)
+       GasA	Gas forced warm air furnace(Gazlı zorlamalı sıcak hava fırını)
+       GasW	Gas hot water or steam heat(Gazlı sıcak su veya buhar ısıtması)
+       Grav	Gravity furnace	(Yerçekimi fırını)
+       OthW	Hot water or steam heat other than gas(Gaz dışındaki sıcak su veya buhar ısıtması)
+       Wall	Wall furnace(Duvar fırını)
+		
+HeatingQC: Heating quality and condition
+(Isıtma kalitesi ve durumu)
+
+       Ex	Excellent()
+       Gd	Good()
+       TA	Average/Typical()
+       Fa	Fair()
+       Po	Poor()
+		
+CentralAir: Central air conditioning
+(Merkezi klima)
+       N	No
+       Y	Yes
+		
+Electrical: Electrical system
+(Elektrik sistemi)
+       SBrkr	Standard Circuit Breakers & Romex (Standart Devre Kesiciler ve Romex)
+       FuseA	Fuse Box over 60 AMP and all Romex wiring (Average)	(Sigorta Kutusu 60 AMP'nin üzerinde ve tüm Romex kablolaması (Ortalama))
+       FuseF	60 AMP Fuse Box and mostly Romex wiring (Fair)60 AMP Sigorta Kutusu ve çoğunlukla Romex kablolaması (Orta)()
+       FuseP	60 AMP Fuse Box and mostly knob & tube wiring (poor)(60 AMP Sigorta Kutusu ve çoğunlukla düğme ve tüp kablolaması (zayıf))
+       Mix	Mixed
+		
+1stFlrSF: First Floor square feet
+ (Birinci Kat kare ayak)
+
+2ndFlrSF: Second floor square feet
+(İkinci kat kare ayak)
+
+LowQualFinSF: Low quality finished square feet (all floors)
+(Düşük kaliteli bitmiş kare ayak (tüm katlar))
+
+GrLivArea: Above grade (ground) living area square feet
+(Düşük kaliteli bitmiş kare ayak (tüm katlar))
+
+BsmtFullBath: Basement full bathrooms
+(Bodrum tam banyolar)
+
+BsmtHalfBath: Basement half bathrooms
+(: Bodrum yarım banyolar)
+
+FullBath: Full bathrooms above grade
+(Zemin üstü tam banyolar)
+
+HalfBath: Half baths above grade
+(Zemin üstü yarım banyolar)
+
+Bedroom: Bedrooms above grade (does NOT include basement bedrooms)
+(Yatak odası: Zemin üstü yatak odaları (bodrum yatak odaları dahil DEĞİLDİR))
+
+Kitchen: Kitchens above grade
+(Mutfak: Zemin üstü mutfaklar)
+
+KitchenQual: Kitchen quality
+(Mutfak kalitesi)
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+       	
+TotRmsAbvGrd: Total rooms above grade (does not include bathrooms)
+(Zemin üstündeki toplam oda sayısı (banyolar dahil değildir))
+
+Functional: Home functionality (Assume typical unless deductions are warranted)
+(Ev işlevselliği (Kesintiler garanti edilmediği sürece tipik olduğunu varsayın))
+
+       Typ	Typical Functionality(Tipik İşlevsellik)
+       Min1	Minor Deductions 1(Küçük Kesintiler 1)
+       Min2	Minor Deductions 2(Küçük Kesintiler 2)
+       Mod	Moderate Deductions(Orta Kesintiler)
+       Maj1	Major Deductions 1(Büyük Kesintiler 1)
+       Maj2	Major Deductions 2(Büyük Kesintiler 2)
+       Sev	Severely Damaged(Ciddi Şekilde Hasar Görmüş)
+       Sal	Salvage only(Sadece Kurtarma()
+		
+Fireplaces: Number of fireplaces
+(Şömine sayısı)
+
+FireplaceQu: Fireplace quality
+(Şömine kalitesi)
+
+       Ex	Excellent - Exceptional Masonry Fireplace(Olağanüstü Duvar Şöminesi)
+       Gd	Good - Masonry Fireplace in main level(Ana katta Duvar Şöminesi)
+       TA	Average - Prefabricated Fireplace in main living area or Masonry Fireplace in basement(orta - Ana yaşam alanında Prefabrik Şömine veya bodrum katında Duvar Şöminesi)
+       Fa	Fair - Prefabricated Fireplace in basement (idare eder - Bodrum katında Prefabrik Şömine)
+       Po	Poor - Ben Franklin Stove(zayıf - Ben Franklin Sobası)
+       NA	No Fireplace()
+		
+GarageType: Garage location
+(Garaj konumu)
+		
+       2Types	More than one type of garage(2 Tür Birden fazla garaj türü)
+       Attchd	Attached to home(Eve bitişik)
+       Basment	Basement Garage(bodrum garajı)
+       BuiltIn	Built-In (Garage part of house - typically has room above garage)(Gömme (Garaj evin bir parçası - genellikle garajın üstünde bir oda vardır))
+       CarPort	Car Port(Araba Garajı)
+       Detchd	Detached from home(Evden ayrı)
+       NA	No Garage
+		
+GarageYrBlt: Year garage was built
+(Garajın yapıldığı yıl)
+		
+GarageFinish: Interior finish of the garage
+(Garajın iç bitişi)
+       Fin	Finished(Bitmiş)
+       RFn	Rough Finished(Kaba Bitmiş)
+       Unf	Unfinished(Bitmemiş)
+       NA	No Garage
+		
+GarageCars: Size of garage in car capacity
+(Garajın araç kapasitesine göre boyutu)
+
+GarageArea: Size of garage in square feet
+(Garajın metrekare cinsinden boyutu)
+
+GarageQual: Garage quality
+(Garaj kalitesi)
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+       NA	No Garage
+		
+GarageCond: Garage condition
+(Garaj durumu)
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+       NA	No Garage
+		
+PavedDrive: Paved driveway
+(Asfaltlanmış araba yolu)
+
+       Y	Paved (Asfaltlanmış)
+       P	Partial Pavement(Kısmi Asfaltlama)
+       N	Dirt/Gravel(Toprak/Çakıl)
+		
+WoodDeckSF: Wood deck area in square feet
+(Ahşap güverte alanı metrekare cinsinden)
+
+OpenPorchSF: Open porch area in square feet
+(Açık veranda alanı metrekare cinsinden)
+
+EnclosedPorch: Enclosed porch area in square feet
+(Kapalı veranda alanı metrekare cinsinden)
+
+3SsnPorch: Three season porch area in square feet
+(Üç mevsim veranda alanı metrekare cinsinden)
+
+ScreenPorch: Screen porch area in square feet
+(: Ekranlı veranda alanı metrekare cinsinden)
+
+PoolArea: Pool area in square feet
+(Havuz alanı metrekare cinsinden)
+
+PoolQC: Pool quality
+(Havuz kalitesi)
+
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       NA	No Pool
+		
+Fence: Fence quality
+(Çit kalitesi)
+       GdPrv	Good Privacy (İyi Gizlilik ()
+       MnPrv	Minimum Privacy(Minimum Gizlilik)
+       GdWo	Good Wood()
+       MnWw	Minimum Wood/Wire(Minimum Ahşap/Tel)
+       NA	No Fence()
+	
+MiscFeature: Miscellaneous feature not covered in other categories
+(ÇeşitliÖzellik: Diğer kategorilerde yer almayan çeşitli özellikler)
+       Elev	Elevator(Asansör)
+       Gar2	2nd Garage (if not described in garage section)(Garaj (garaj bölümünde açıklanmamışsa))
+       Othr	Other()
+       Shed	Shed (over 100 SF)(Kulübe (100 SF üzeri))
+       TenC	Tennis Court(Tenis Kortu)
+       NA	None
+		
+MiscVal: $Value of miscellaneous feature
+($ Çeşitli özelliğin değeri)
+
+MoSold: Month Sold (MM)
+(Satış Ayı)
+
+YrSold: Year Sold (YYYY)
+(Satış Yılı)
+
+SaleType: Type of sale
+(Satış türü)
+       WD 	Warranty Deed - Conventional   (Garanti Senedi - Konvansiyonel)
+       CWD	Warranty Deed - Cash   (Nakit)
+       VWD	Warranty Deed - VA Loan   (A Kredisi)
+       New	Home just constructed and sold   (Ev yeni inşa edildi ve satıldı)
+       COD	Court Officer Deed/Estate    (Mahkeme Görevlisi Senedi/Mülk(
+       Con	Contract 15% Down payment regular terms   (Sözleşme %15 Peşinat düzenli şartlar)
+       ConLw	Contract Low Down payment and low interest   (Düşük Peşinat ve düşük faiz)
+       ConLI	Contract Low Interest   (Düşük Faiz)
+       ConLD	Contract Low Down   (Düşük Peşinat)
+       Oth	Other
+		
+SaleCondition: Condition of sale
+(Satış durumu)
+       Normal	Normal Sale
+       Abnorml	Abnormal Sale -  trade, foreclosure, short sale  (Anormal Satış - ticaret, haciz, kısa satış)
+       AdjLand	Adjoining Land Purchase  (Bitişik Arazi Satın Alma)
+       Alloca	Allocation - two linked properties with separate deeds, typically condo with a garage unit	(Tahsis - ayrı tapulu iki bağlantılı mülk, genellikle garaj ünitesi olan daire)
+       Family	Sale between family members(Aile üyeleri arasında satış)
+       Partial	Home was not completed when last assessed (associated with New Homes)(Kısmi - Ev son değerlendirildiğinde tamamlanmamıştı (Yeni Evlerle ilişkili))
